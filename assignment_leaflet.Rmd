@@ -1,0 +1,22 @@
+---
+title: "Peer-graded Assignment: R Markdown and Leaflet"
+author: "Maya Gershtenson"
+date: "2025-12-27"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(leaflet)
+```
+
+
+
+```{r map}
+my_map <- leaflet() %>%
+  addTiles() %>%
+  addMarkers(lat=51.4749, lng=-0.2216,
+             popup="Craven Cottage")
+my_map
+```
+
